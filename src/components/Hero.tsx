@@ -46,7 +46,7 @@ const Hero = ({ introDone = true }: { introDone?: boolean }) => {
               transition={{ delay: 0.5, duration: 1 }}
               className="max-w-lg space-y-8"
             >
-              <p className="text-ink-muted text-xl leading-relaxed font-medium font-serif italic border-l-2 border-ink/10 pl-8">
+              <p className="text-ink-muted text-2xl leading-relaxed font-medium font-serif italic border-l-2 border-ink/10 pl-8">
                 "I help small and medium businesses look more professional online and turn visitors into customers."
               </p>
               

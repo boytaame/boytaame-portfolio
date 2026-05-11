@@ -31,7 +31,7 @@ const Contact = () => {
           <div className="flex justify-center pt-8">
             <motion.a 
               whileHover={{ y: -5 }}
-              href="https://www.instagram.com/kevin.jerome_/" 
+              href="https://www.instagram.com/boytaame77/" 
               target="_blank" 
               className="p-4 rounded-full border border-cream/20 hover:border-cream/60 transition-colors duration-300 group"
             >
