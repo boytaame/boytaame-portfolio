@@ -1,0 +1,18 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        cream: '#f5f2e8',
+        ink: '#0a0a0a',
+        'ink-muted': '#4a4a4a',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Cormorant Garamond', 'serif'],
+      },
+    },
+  },
+  plugins: [],
+};
