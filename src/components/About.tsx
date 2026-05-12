@@ -10,18 +10,47 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="relative py-32 bg-cream border-y border-ink/5">
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            
+    <section id="about" className="relative py-32 lg:py-0 min-h-screen bg-cream border-y border-ink/5 overflow-hidden flex items-center">
+      <div className="container mx-auto px-6 relative z-10 w-full">
+        <div className="flex flex-col lg:flex-row gap-16 lg:gap-8 xl:gap-12 justify-end lg:items-center">
+          
+          <div className="w-[calc(100%+3rem)] -mx-6 lg:mx-0 lg:w-[45vw] xl:w-[50vw] lg:absolute lg:-left-[calc(50vw-50%)] lg:top-0 lg:bottom-0 relative mb-8 lg:mb-0 mt-8 lg:mt-0 flex items-center justify-start lg:justify-start">
             <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="space-y-8 lg:space-y-12"
+              transition={{ duration: 1 }}
+              className="relative w-full h-[60vh] md:h-[70vh] lg:h-screen group"
             >
+              <div className="w-full h-full bg-transparent overflow-hidden relative z-10 transform-gpu flex justify-start">
+                <img 
+                  src="https://i.pinimg.com/736x/50/4c/94/504c9430631cde54eb8f5f15e24273c2.jpg"
+                  alt="Creative Workspace"
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 will-change-transform"
+                />
+                <div className="absolute inset-0 bg-ink/10 group-hover:bg-transparent transition-colors duration-500" />
+                
+                <div className="absolute bottom-12 right-12 lg:right-12 xl:right-24 bg-ink/90 border border-white/10 p-8 rounded-3xl w-auto shadow-2xl backdrop-blur-sm z-20">
+                  <div className="flex justify-between items-end gap-12">
+                    <div className="space-y-1">
+                      <p className="text-white/40 text-[8px] font-bold tracking-widest uppercase">Current Status</p>
+                      <p className="text-white font-serif italic text-lg leading-none">Founder & Creator</p>
+                    </div>
+                    <div className="text-white/20 text-4xl font-bold font-serif opacity-50">01</div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="w-full lg:w-6/12 xl:w-5/12 space-y-8 lg:space-y-12 relative z-20 pb-20 lg:pb-0 pt-8 lg:pt-0"
+          >
               <div className="space-y-4">
                 <p className="text-ink-muted text-[10px] font-bold tracking-[0.4em] uppercase">▶ The Narrative</p>
                 <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-ink italic leading-tight">
@@ -36,10 +65,10 @@ const About = () => {
                 </p>
                 <div className="space-y-6 text-base font-medium text-ink-muted leading-loose">
                   <p>
-                    My journey began with the tactile world of flipbooks and stories. Transitioning to software and web development allowed me to breathe life into those static ideas. From building mobile apps to Unity game development, I've honed a multi-disciplinary approach to digital craft.
+                    My journey began with the tactile world of flipbooks and stories. Transitioning to software development allowed me to breathe life into those static ideas. From building mobile apps to Unity game development, I've honed a multi-disciplinary approach to digital craft.
                   </p>
                   <p>
-                    Today, I leverage AI not just as a tool, but as a force multiplier. Its important to understand the balance between automated efficiency and manual craftsmanship to deliver at the highest level.
+                    Today, I leverage AI not just as a tool, but as a force multiplier. In entrepreneurship, speed is the differentiator. Its important to understand the balance between automated efficiency and manual craftsmanship to deliver at the highest level.
                   </p>
                 </div>
               </div>
@@ -58,35 +87,8 @@ const About = () => {
               </div>
             </motion.div>
 
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
-              className="relative aspect-[3/4] bg-ink/5 rounded-[3rem] overflow-hidden group"
-            >
-              <img 
-                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200"
-                alt="Creative Workspace"
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 will-change-transform transform-gpu"
-              />
-              <div className="absolute inset-0 bg-ink/10 group-hover:bg-transparent transition-colors duration-500" />
-              
-              <div className="absolute bottom-12 left-12 right-12 bg-ink/80 border border-white/10 p-8 rounded-3xl">
-                <div className="flex justify-between items-end">
-                  <div className="space-y-1">
-                    <p className="text-white/40 text-[8px] font-bold tracking-widest uppercase">Current Status</p>
-                    <p className="text-white font-serif italic text-lg leading-none">Founder & Creator</p>
-                  </div>
-                  <div className="text-white/20 text-4xl font-bold font-serif opacity-50">01</div>
-                </div>
-              </div>
-            </motion.div>
-            
           </div>
         </div>
-      </div>
     </section>
   );
 };

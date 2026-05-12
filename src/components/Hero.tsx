@@ -11,7 +11,7 @@ const Hero = ({ introDone = true }: { introDone?: boolean }) => {
       <div className="container mx-auto px-6 relative z-10 w-full">
         <div className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-8 xl:gap-12 lg:items-end">
           
-          <div className="w-full lg:w-7/12 xl:w-8/12 space-y-8 lg:space-y-12">
+          <div className="w-full lg:w-6/12 xl:w-7/12 space-y-8 lg:space-y-12 relative z-20 pb-20 lg:pb-0 pt-8 lg:pt-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: introDone ? 1 : 0, y: introDone ? 0 : 20 }}
@@ -46,8 +46,8 @@ const Hero = ({ introDone = true }: { introDone?: boolean }) => {
               transition={{ delay: 0.5, duration: 1 }}
               className="max-w-lg space-y-8"
             >
-              <p className="text-ink-muted text-2xl leading-relaxed font-medium font-serif italic border-l-2 border-ink/10 pl-8">
-                "I help small and medium businesses look more professional online and turn visitors into customers."
+              <p className="text-ink-muted text-xl leading-relaxed font-medium font-serif italic border-l-2 border-ink/10 pl-8">
+                "A lifelong creator with a passion for bringing ideas to life through the intersection of code and design."
               </p>
               
               <div className="flex items-center space-x-8">
@@ -64,27 +64,19 @@ const Hero = ({ introDone = true }: { introDone?: boolean }) => {
             </motion.div>
           </div>
 
-          <div className="w-full max-w-sm md:max-w-md mx-auto lg:mx-0 lg:max-w-none lg:w-5/12 xl:w-4/12 relative mb-8 lg:mb-0">
+          <div className="w-[calc(100%+3rem)] -mx-6 lg:mx-0 lg:w-[45vw] xl:w-[50vw] lg:absolute lg:-right-[calc(50vw-50%)] lg:top-0 lg:bottom-0 relative mb-8 lg:mb-0 mt-8 lg:mt-0 flex items-center justify-end lg:justify-end">
             <motion.div
-              initial={{ opacity: 0, scale: 0.98, rotate: 2 }}
-              animate={{ opacity: introDone ? 1 : 0, scale: introDone ? 1 : 0.98, rotate: introDone ? 0 : 2 }}
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: introDone ? 1 : 0, scale: introDone ? 1 : 0.98 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-              className="relative"
+              className="relative w-full h-[60vh] md:h-[70vh] lg:h-screen"
             >
-              <div className="absolute -inset-8 border border-ink/5 rounded-[40px] -rotate-6 pointer-events-none" />
-              <div className="aspect-[4/5] w-full bg-ink rounded-3xl overflow-hidden shadow-xl relative z-10 group transform-gpu">
+              <div className="w-full h-full bg-transparent overflow-visible relative z-10 group transform-gpu flex justify-end">
                 <img 
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200"
+                  src="https://i.imgur.com/I1FOimr.png"
                   alt="Creative Workspace"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 will-change-transform"
+                  className="w-full lg:w-auto h-full object-cover lg:object-contain object-right transition-transform duration-500 group-hover:scale-105 will-change-transform"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              </div>
-              
-              <div className="absolute -top-12 -right-12 w-24 h-24 bg-cream border border-ink/10 rounded-full flex items-center justify-center rotate-12 z-20 shadow-xl">
-                <span className="text-[8px] font-bold tracking-widest text-center uppercase leading-tight">
-                  Born <br /> to <br /> Create
-                </span>
               </div>
             </motion.div>
           </div>
