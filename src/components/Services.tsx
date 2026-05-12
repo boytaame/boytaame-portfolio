@@ -3,58 +3,58 @@ import { Mouse, Target, Dumbbell, BookImage, NotebookTabs, Languages, ArrowUpRig
 
 const projectThemes = [
   {
-    border: 'border-violet-500/20 hover:border-violet-500/40 hover:ring-violet-500/20',
-    shadow: 'shadow-md shadow-violet-500/5 hover:shadow-xl hover:shadow-violet-500/10',
-    iconBg: 'bg-violet-600',
-    iconShadow: 'shadow-violet-500/20',
-    text: 'text-violet-600',
-    hoverBg: 'group-hover:bg-violet-600 group-hover:border-violet-600',
-    patternColor: 'text-violet-600',
+    border: 'border-neon-purple/20 hover:border-neon-purple/50 hover:ring-neon-purple/30',
+    shadow: 'shadow-lg shadow-neon-purple/5 hover:shadow-[0_0_30px_-5px_rgba(171,75,255,0.3)]',
+    iconBg: 'bg-neon-purple text-cream',
+    iconShadow: 'shadow-[0_0_15px_rgba(171,75,255,0.5)]',
+    text: 'text-neon-purple',
+    hoverBg: 'group-hover:bg-neon-purple group-hover:border-neon-purple group-hover:text-cream',
+    patternColor: 'text-neon-purple',
   },
   {
-    border: 'border-fuchsia-500/20 hover:border-fuchsia-500/40 hover:ring-fuchsia-500/20',
-    shadow: 'shadow-md shadow-fuchsia-500/5 hover:shadow-xl hover:shadow-fuchsia-500/10',
-    iconBg: 'bg-fuchsia-600',
-    iconShadow: 'shadow-fuchsia-500/20',
-    text: 'text-fuchsia-600',
-    hoverBg: 'group-hover:bg-fuchsia-600 group-hover:border-fuchsia-600',
-    patternColor: 'text-fuchsia-600',
+    border: 'border-neon-cyan/20 hover:border-neon-cyan/50 hover:ring-neon-cyan/30',
+    shadow: 'shadow-lg shadow-neon-cyan/5 hover:shadow-[0_0_30px_-5px_rgba(0,229,255,0.3)]',
+    iconBg: 'bg-neon-cyan text-cream',
+    iconShadow: 'shadow-[0_0_15px_rgba(0,229,255,0.5)]',
+    text: 'text-neon-cyan',
+    hoverBg: 'group-hover:bg-neon-cyan group-hover:border-neon-cyan group-hover:text-cream',
+    patternColor: 'text-neon-cyan',
   },
   {
-    border: 'border-indigo-500/20 hover:border-indigo-500/40 hover:ring-indigo-500/20',
-    shadow: 'shadow-md shadow-indigo-500/5 hover:shadow-xl hover:shadow-indigo-500/10',
-    iconBg: 'bg-indigo-600',
-    iconShadow: 'shadow-indigo-500/20',
-    text: 'text-indigo-600',
-    hoverBg: 'group-hover:bg-indigo-600 group-hover:border-indigo-600',
-    patternColor: 'text-indigo-600',
+    border: 'border-pink-500/20 hover:border-pink-500/50 hover:ring-pink-500/30',
+    shadow: 'shadow-lg shadow-pink-500/5 hover:shadow-[0_0_30px_-5px_rgba(236,72,153,0.3)]',
+    iconBg: 'bg-pink-500 text-cream',
+    iconShadow: 'shadow-[0_0_15px_rgba(236,72,153,0.5)]',
+    text: 'text-pink-500',
+    hoverBg: 'group-hover:bg-pink-500 group-hover:border-pink-500 group-hover:text-cream',
+    patternColor: 'text-pink-500',
   },
   {
-    border: 'border-rose-500/20 hover:border-rose-500/40 hover:ring-rose-500/20',
-    shadow: 'shadow-md shadow-rose-500/5 hover:shadow-xl hover:shadow-rose-500/10',
-    iconBg: 'bg-rose-600',
-    iconShadow: 'shadow-rose-500/20',
-    text: 'text-rose-600',
-    hoverBg: 'group-hover:bg-rose-600 group-hover:border-rose-600',
-    patternColor: 'text-rose-600',
+    border: 'border-blue-500/20 hover:border-blue-500/50 hover:ring-blue-500/30',
+    shadow: 'shadow-lg shadow-blue-500/5 hover:shadow-[0_0_30px_-5px_rgba(59,130,246,0.3)]',
+    iconBg: 'bg-blue-500 text-cream',
+    iconShadow: 'shadow-[0_0_15px_rgba(59,130,246,0.5)]',
+    text: 'text-blue-500',
+    hoverBg: 'group-hover:bg-blue-500 group-hover:border-blue-500 group-hover:text-cream',
+    patternColor: 'text-blue-500',
   },
   {
-    border: 'border-amber-500/20 hover:border-amber-500/40 hover:ring-amber-500/20',
-    shadow: 'shadow-md shadow-amber-500/5 hover:shadow-xl hover:shadow-amber-500/10',
-    iconBg: 'bg-amber-600',
-    iconShadow: 'shadow-amber-500/20',
-    text: 'text-amber-600',
-    hoverBg: 'group-hover:bg-amber-600 group-hover:border-amber-600',
-    patternColor: 'text-amber-600',
+    border: 'border-neon-purple/20 hover:border-neon-purple/50 hover:ring-neon-purple/30',
+    shadow: 'shadow-lg shadow-neon-purple/5 hover:shadow-[0_0_30px_-5px_rgba(171,75,255,0.3)]',
+    iconBg: 'bg-neon-purple text-cream',
+    iconShadow: 'shadow-[0_0_15px_rgba(171,75,255,0.5)]',
+    text: 'text-neon-purple',
+    hoverBg: 'group-hover:bg-neon-purple group-hover:border-neon-purple group-hover:text-cream',
+    patternColor: 'text-neon-purple',
   },
   {
-    border: 'border-teal-500/20 hover:border-teal-500/40 hover:ring-teal-500/20',
-    shadow: 'shadow-md shadow-teal-500/5 hover:shadow-xl hover:shadow-teal-500/10',
-    iconBg: 'bg-teal-600',
-    iconShadow: 'shadow-teal-500/20',
-    text: 'text-teal-600',
-    hoverBg: 'group-hover:bg-teal-600 group-hover:border-teal-600',
-    patternColor: 'text-teal-600',
+    border: 'border-neon-cyan/20 hover:border-neon-cyan/50 hover:ring-neon-cyan/30',
+    shadow: 'shadow-lg shadow-neon-cyan/5 hover:shadow-[0_0_30px_-5px_rgba(0,229,255,0.3)]',
+    iconBg: 'bg-neon-cyan text-cream',
+    iconShadow: 'shadow-[0_0_15px_rgba(0,229,255,0.5)]',
+    text: 'text-neon-cyan',
+    hoverBg: 'group-hover:bg-neon-cyan group-hover:border-neon-cyan group-hover:text-cream',
+    patternColor: 'text-neon-cyan',
   }
 ];
 
@@ -199,13 +199,18 @@ const Services = () => {
   ];
 
   return (
-    <section id="projects" className="py-32 bg-cream overflow-hidden">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-32 bg-cream overflow-hidden relative">
+      
+      {/* Ambient Neon Background Glows */}
+      <div className="absolute top-[10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-pink-500/10 blur-[120px] pointer-events-none mix-blend-screen opacity-50" />
+      <div className="absolute bottom-[20%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-neon-cyan/10 blur-[150px] pointer-events-none mix-blend-screen opacity-40" />
+
+      <div className="container mx-auto px-6 relative z-10">
         
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
           <div className="space-y-4">
-            <p className="text-ink-muted text-[10px] font-bold tracking-[0.4em] uppercase font-sans">▶ Selected Works</p>
-            <h2 className="text-6xl md:text-8xl font-bold text-ink italic tracking-tight">Recent <br /> <span className="not-italic font-sans text-ink/20">Artifacts.</span></h2>
+            <p className="text-neon-cyan text-[10px] font-bold tracking-[0.4em] uppercase font-sans">▶ Selected Works</p>
+            <h2 className="text-6xl md:text-8xl font-bold text-ink italic tracking-tight">Recent <br /> <span className="italic bg-gradient-to-r from-neon-cyan to-neon-purple bg-clip-text text-transparent">Artifacts.</span></h2>
           </div>
           <div className="max-w-xs space-y-4">
             <p className="text-ink-muted font-medium text-sm leading-relaxed border-l-2 border-ink/10 pl-6 py-1">
@@ -251,7 +256,7 @@ const Services = () => {
                     }
                   }
                 }}
-                className={`${sizeClass} group relative bg-white rounded-[2rem] ${paddingClass} overflow-hidden flex flex-col min-h-[300px] md:min-h-0 transition-all duration-500 border transform-gpu ring-1 ring-transparent hover:-translate-y-1 ${theme.border} ${theme.shadow}`}
+                className={`${sizeClass} group relative bg-ink/5 rounded-[2rem] ${paddingClass} overflow-hidden flex flex-col min-h-[300px] md:min-h-0 transition-all duration-500 border transform-gpu ring-1 ring-transparent hover:-translate-y-1 ${theme.border} ${theme.shadow}`}
               >
                 {/* Background Pattern */}
                 <ProjectPattern index={index} className={theme.patternColor} />

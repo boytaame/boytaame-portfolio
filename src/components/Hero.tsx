@@ -8,6 +8,12 @@ const Hero = ({ introDone = true }: { introDone?: boolean }) => {
 
   return (
     <section id="home" className="relative min-h-screen bg-cream flex items-center pt-32 pb-20 lg:pt-24 lg:pb-0 overflow-hidden">
+      
+      {/* Ambient Neon Background Glows */}
+      <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-neon-purple/20 blur-[120px] pointer-events-none mix-blend-screen opacity-50 animate-pulse-slow" />
+      <div className="absolute top-[20%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-neon-cyan/20 blur-[120px] pointer-events-none mix-blend-screen opacity-40 animate-pulse-slow" style={{ animationDelay: '2s' }} />
+      <div className="absolute bottom-[-10%] left-[20%] w-[60vw] h-[60vw] rounded-full bg-pink-500/10 blur-[150px] pointer-events-none mix-blend-screen opacity-60 animate-pulse-slow" style={{ animationDelay: '4s' }} />
+
       <div className="container mx-auto px-6 relative z-10 w-full">
         <div className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-8 xl:gap-12 lg:items-end">
           
@@ -57,8 +63,8 @@ const Hero = ({ introDone = true }: { introDone?: boolean }) => {
                   onClick={scrollToContact}
                   className="bg-ink text-cream px-10 py-5 rounded-full font-bold tracking-widest text-[10px] transition-transform duration-300 shadow-lg hover:shadow-xl relative group overflow-hidden"
                 >
-                  <span className="relative z-10">GET IN TOUCH</span>
-                  <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+                  <span className="relative z-10 group-hover:text-neon-cyan transition-colors duration-300">GET IN TOUCH</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-neon-purple/20 to-neon-cyan/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
                 </motion.button>
               </div>
             </motion.div>

@@ -3,8 +3,12 @@ import { motion } from 'motion/react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-32 bg-ink text-cream relative">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-32 bg-ink text-cream relative overflow-hidden">
+      
+      {/* Ambient Neon Background Glows */}
+      <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] rounded-full bg-neon-purple/10 blur-[150px] pointer-events-none mix-blend-screen opacity-60" />
+
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center max-w-4xl mx-auto space-y-12">
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
@@ -23,7 +27,7 @@ const Contact = () => {
             whileTap={{ scale: 0.95 }}
             href="https://wa.me/+6281388286665" 
             target="_blank" 
-            className="inline-block bg-cream text-ink px-16 py-5 rounded-full font-bold text-sm tracking-widest transition-transform duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 transform-gpu"
+            className="inline-block bg-cream text-ink px-16 py-5 rounded-full font-bold text-sm tracking-widest transition-all duration-500 shadow-[0_0_20px_rgba(171,75,255,0.4)] hover:shadow-[0_0_40px_rgba(0,229,255,0.5)] transform-gpu hover:text-neon-cyan"
           >
             CONNECT WITH ME
           </motion.a>
@@ -31,7 +35,7 @@ const Contact = () => {
           <div className="flex justify-center pt-8">
             <motion.a 
               whileHover={{ y: -5 }}
-              href="https://www.instagram.com/boytaame77/" 
+              href="https://www.instagram.com/kevin.jerome_/" 
               target="_blank" 
               className="p-4 rounded-full border border-cream/20 hover:border-cream/60 transition-colors duration-300 group"
             >

@@ -5,12 +5,17 @@ const About = () => {
     { name: 'HTML', color: 'bg-orange-500' },
     { name: 'CSS', color: 'bg-blue-500' },
     { name: 'JavaScript', color: 'bg-yellow-500' },
-    { name: 'C#', color: 'bg-purple-600' },
-    { name: 'AI Optimization', color: 'bg-ink' }
+    { name: 'C#', color: 'bg-neon-purple' },
+    { name: 'AI Optimization', color: 'bg-neon-cyan' }
   ];
 
   return (
     <section id="about" className="relative py-32 lg:py-0 min-h-screen bg-cream border-y border-ink/5 overflow-hidden flex items-center">
+      
+      {/* Ambient Neon Background Glows */}
+      <div className="absolute top-[30%] right-[-20%] w-[60vw] h-[60vw] rounded-full bg-blue-500/10 blur-[150px] pointer-events-none mix-blend-screen opacity-40" />
+      <div className="absolute bottom-[-20%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-neon-purple/10 blur-[120px] pointer-events-none mix-blend-screen opacity-50" />
+
       <div className="container mx-auto px-6 relative z-10 w-full">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-8 xl:gap-12 justify-end lg:items-center">
           
@@ -29,15 +34,15 @@ const About = () => {
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 will-change-transform"
                 />
-                <div className="absolute inset-0 bg-ink/10 group-hover:bg-transparent transition-colors duration-500" />
+                <div className="absolute inset-0 group-hover:bg-transparent transition-colors duration-500" />
                 
-                <div className="absolute bottom-12 right-12 lg:right-12 xl:right-24 bg-ink/90 border border-white/10 p-8 rounded-3xl w-auto shadow-2xl backdrop-blur-sm z-20">
+                <div className="absolute bottom-12 right-12 lg:right-12 xl:right-24 bg-cream/80 border border-neon-cyan/20 hover:border-neon-cyan/50 hover:shadow-[0_0_30px_-5px_rgba(0,229,255,0.3)] transition-all duration-500 p-8 rounded-3xl w-auto shadow-2xl backdrop-blur-md z-20 group">
                   <div className="flex justify-between items-end gap-12">
                     <div className="space-y-1">
-                      <p className="text-white/40 text-[8px] font-bold tracking-widest uppercase">Current Status</p>
-                      <p className="text-white font-serif italic text-lg leading-none">Founder & Creator</p>
+                      <p className="text-neon-cyan/60 text-[8px] font-bold tracking-widest uppercase">Current Status</p>
+                      <p className="text-ink font-serif italic text-lg leading-none">Founder & Creator</p>
                     </div>
-                    <div className="text-white/20 text-4xl font-bold font-serif opacity-50">01</div>
+                    <div className="text-neon-cyan/30 group-hover:text-neon-cyan/60 transition-colors duration-500 text-4xl font-bold font-serif opacity-50">01</div>
                   </div>
                 </div>
               </div>
@@ -52,10 +57,9 @@ const About = () => {
             className="w-full lg:w-6/12 xl:w-5/12 space-y-8 lg:space-y-12 relative z-20 pb-20 lg:pb-0 pt-8 lg:pt-0"
           >
               <div className="space-y-4">
-                <p className="text-ink-muted text-[10px] font-bold tracking-[0.4em] uppercase">▶ The Narrative</p>
+                <p className="text-neon-purple text-[10px] font-bold tracking-[0.4em] uppercase">▶ The Narrative</p>
                 <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-ink italic leading-tight">
-                  Creativity, <br />
-                  <span className="not-italic font-sans text-ink/40">Coded.</span>
+                  building <br/> <span className="bg-gradient-to-r from-neon-purple via-neon-cyan to-blue-500 bg-clip-text text-transparent not-italic font-sans">digital futures.</span>
                 </h2>
               </div>
 
@@ -78,7 +82,7 @@ const About = () => {
                   <motion.div 
                     key={index}
                     whileHover={{ y: -2 }}
-                    className="flex items-center space-x-3 bg-white px-5 py-2.5 rounded-full border border-ink/5 shadow-sm"
+                    className="flex items-center space-x-3 bg-ink/5 backdrop-blur-sm px-5 py-2.5 rounded-full border border-ink/10 shadow-sm"
                   >
                     <div className={`w-1.5 h-1.5 rounded-full ${skill.color}`} />
                     <span className="text-ink text-[10px] font-bold tracking-[0.2em] uppercase">{skill.name}</span>

@@ -19,11 +19,11 @@ const Header = () => {
       className="fixed top-0 left-0 right-0 z-50 py-4 sm:py-8"
     >
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="bg-white/95 border border-ink/5 px-4 sm:px-8 py-3 sm:py-4 rounded-[2rem] flex items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.05)]">
+        <div className="bg-cream/95 backdrop-blur-md border border-ink/5 px-4 sm:px-8 py-3 sm:py-4 rounded-[2rem] flex items-center justify-between shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
           
           <div className="flex items-center space-x-3 cursor-pointer group" onClick={() => scrollToSection('home')}>
             <div className="w-8 h-8 bg-ink rounded-lg flex items-center justify-center transition-transform duration-500 group-hover:rotate-[360deg]">
-              <span className="text-white font-bold text-sm font-serif">B</span>
+              <span className="text-cream font-bold text-sm font-serif">B</span>
             </div>
             <span className="text-[10px] font-bold tracking-[0.3em] text-ink hidden sm:block">BOYTAAME</span>
           </div>
@@ -67,7 +67,7 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="md:hidden mt-2 bg-white/95 border border-ink/5 rounded-2xl p-4 flex flex-col space-y-4 shadow-xl"
+              className="md:hidden mt-2 bg-cream/95 backdrop-blur-md border border-ink/5 rounded-2xl p-4 flex flex-col space-y-4 shadow-xl"
             >
               <button 
                 onClick={() => scrollToSection('projects')}
