@@ -13,8 +13,8 @@ const About = () => {
     <section id="about" className="relative py-32 lg:py-0 min-h-screen bg-cream border-y border-ink/5 overflow-hidden flex items-center">
       
       {/* Ambient Neon Background Glows */}
-      <div className="absolute top-[30%] right-[-20%] w-[60vw] h-[60vw] rounded-full bg-blue-500/10 blur-[150px] pointer-events-none mix-blend-screen opacity-40" />
-      <div className="absolute bottom-[-20%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-neon-purple/10 blur-[120px] pointer-events-none mix-blend-screen opacity-50" />
+      <div className="absolute top-[30%] right-[-20%] w-[60vw] h-[60vw] bg-[radial-gradient(circle,rgba(59,130,246,0.1)_0%,transparent_60%)] pointer-events-none mix-blend-screen opacity-40 transform-gpu" />
+      <div className="absolute bottom-[-20%] left-[-10%] w-[50vw] h-[50vw] bg-[radial-gradient(circle,rgba(171,75,255,0.1)_0%,transparent_60%)] pointer-events-none mix-blend-screen opacity-50 transform-gpu" />
 
       <div className="container mx-auto px-6 relative z-10 w-full">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-8 xl:gap-12 justify-end lg:items-center">
@@ -34,7 +34,7 @@ const About = () => {
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 will-change-transform"
                 />
-                <div className="absolute inset-0 group-hover:bg-transparent transition-colors duration-500" />
+                <div className="absolute inset-0 bg-ink/10 group-hover:bg-transparent transition-colors duration-500" />
                 
                 <div className="absolute bottom-12 right-12 lg:right-12 xl:right-24 bg-cream/80 border border-neon-cyan/20 hover:border-neon-cyan/50 hover:shadow-[0_0_30px_-5px_rgba(0,229,255,0.3)] transition-all duration-500 p-8 rounded-3xl w-auto shadow-2xl backdrop-blur-md z-20 group">
                   <div className="flex justify-between items-end gap-12">

@@ -9,10 +9,10 @@ const Hero = ({ introDone = true }: { introDone?: boolean }) => {
   return (
     <section id="home" className="relative min-h-screen bg-cream flex items-center pt-32 pb-20 lg:pt-24 lg:pb-0 overflow-hidden">
       
-      {/* Ambient Neon Background Glows */}
-      <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] rounded-full bg-neon-purple/20 blur-[120px] pointer-events-none mix-blend-screen opacity-50 animate-pulse-slow" />
-      <div className="absolute top-[20%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-neon-cyan/20 blur-[120px] pointer-events-none mix-blend-screen opacity-40 animate-pulse-slow" style={{ animationDelay: '2s' }} />
-      <div className="absolute bottom-[-10%] left-[20%] w-[60vw] h-[60vw] rounded-full bg-pink-500/10 blur-[150px] pointer-events-none mix-blend-screen opacity-60 animate-pulse-slow" style={{ animationDelay: '4s' }} />
+      {/* Ambient Neon Background Glows - Optimized using radial gradients instead of blur */}
+      <div className="absolute top-[-10%] left-[-10%] w-[50vw] h-[50vw] bg-[radial-gradient(circle,rgba(171,75,255,0.2)_0%,transparent_60%)] pointer-events-none mix-blend-screen opacity-50 animate-pulse-slow transform-gpu" />
+      <div className="absolute top-[20%] right-[-10%] w-[40vw] h-[40vw] bg-[radial-gradient(circle,rgba(0,229,255,0.2)_0%,transparent_60%)] pointer-events-none mix-blend-screen opacity-40 animate-pulse-slow transform-gpu" style={{ animationDelay: '2s' }} />
+      <div className="absolute bottom-[-10%] left-[20%] w-[60vw] h-[60vw] bg-[radial-gradient(circle,rgba(236,72,153,0.1)_0%,transparent_60%)] pointer-events-none mix-blend-screen opacity-60 animate-pulse-slow transform-gpu" style={{ animationDelay: '4s' }} />
 
       <div className="container mx-auto px-6 relative z-10 w-full">
         <div className="flex flex-col-reverse lg:flex-row gap-16 lg:gap-8 xl:gap-12 lg:items-end">

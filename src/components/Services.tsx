@@ -202,8 +202,8 @@ const Services = () => {
     <section id="projects" className="py-32 bg-cream overflow-hidden relative">
       
       {/* Ambient Neon Background Glows */}
-      <div className="absolute top-[10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-pink-500/10 blur-[120px] pointer-events-none mix-blend-screen opacity-50" />
-      <div className="absolute bottom-[20%] right-[-10%] w-[50vw] h-[50vw] rounded-full bg-neon-cyan/10 blur-[150px] pointer-events-none mix-blend-screen opacity-40" />
+      <div className="absolute top-[10%] left-[-10%] w-[40vw] h-[40vw] bg-[radial-gradient(circle,rgba(236,72,153,0.1)_0%,transparent_60%)] pointer-events-none mix-blend-screen opacity-50 transform-gpu" />
+      <div className="absolute bottom-[20%] right-[-10%] w-[50vw] h-[50vw] bg-[radial-gradient(circle,rgba(0,229,255,0.1)_0%,transparent_60%)] pointer-events-none mix-blend-screen opacity-40 transform-gpu" />
 
       <div className="container mx-auto px-6 relative z-10">
         
