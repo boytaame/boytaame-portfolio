@@ -34,7 +34,7 @@ const About = () => {
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 will-change-transform"
                 />
-                <div className="absolute inset-0 bg-ink/10 group-hover:bg-transparent transition-colors duration-500" />
+                <div className="absolute inset-0 group-hover:bg-transparent transition-colors duration-500" />
                 
                 <div className="absolute bottom-12 right-12 lg:right-12 xl:right-24 bg-cream/80 border border-neon-cyan/20 hover:border-neon-cyan/50 hover:shadow-[0_0_30px_-5px_rgba(0,229,255,0.3)] transition-all duration-500 p-8 rounded-3xl w-auto shadow-2xl backdrop-blur-md z-20 group">
                   <div className="flex justify-between items-end gap-12">
