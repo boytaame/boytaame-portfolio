@@ -70,7 +70,7 @@ const Hero = ({ introDone = true }: { introDone?: boolean }) => {
             </motion.div>
           </div>
 
-          <div className="w-[calc(100%+3rem)] -mx-6 lg:mx-0 lg:w-[45vw] xl:w-[50vw] lg:absolute lg:-right-[calc(50vw-50%)] lg:top-0 lg:bottom-0 relative mb-8 lg:mb-0 mt-8 lg:mt-0 flex items-center justify-end lg:justify-end">
+          <div className="hidden md:flex w-[calc(100%+3rem)] -mx-6 lg:mx-0 lg:w-[45vw] xl:w-[50vw] lg:absolute lg:-right-[calc(50vw-50%)] lg:top-0 lg:bottom-0 relative mb-8 lg:mb-0 mt-8 lg:mt-0 items-center justify-end lg:justify-end">
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: introDone ? 1 : 0, scale: introDone ? 1 : 0.98 }}

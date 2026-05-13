@@ -69,18 +69,21 @@ const Header = () => {
               transition={{ duration: 0.2 }}
               className="md:hidden mt-2 bg-cream/95 backdrop-blur-md border border-ink/5 rounded-2xl p-4 flex flex-col space-y-4 shadow-xl"
             >
-              <button 
-                onClick={() => scrollToSection('projects')}
-                className="text-left text-ink text-xs font-bold tracking-[0.2em] py-2 px-4 hover:bg-ink/5 rounded-lg transition-colors"
-              >
-                PROJECTS
-              </button>
+              
               <button 
                 onClick={() => scrollToSection('about')}
                 className="text-left text-ink text-xs font-bold tracking-[0.2em] py-2 px-4 hover:bg-ink/5 rounded-lg transition-colors"
               >
                 NARRATIVE
               </button>
+              
+              <button 
+                onClick={() => scrollToSection('projects')}
+                className="text-left text-ink text-xs font-bold tracking-[0.2em] py-2 px-4 hover:bg-ink/5 rounded-lg transition-colors"
+              >
+                PROJECTS
+              </button>
+              
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="text-left bg-ink text-cream text-xs font-bold tracking-[0.2em] py-3 px-4 rounded-xl transition-colors"
